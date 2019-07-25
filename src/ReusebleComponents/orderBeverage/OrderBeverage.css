@@ -1,0 +1,22 @@
+.form-input {
+  color: #fff;
+  background-color: inherit;
+  display: inline-block;
+}
+.form-input:focus {
+  color: #fff;
+  background-color: #1d3252;
+}
+
+.form-input::placeholder {
+  color: #fff;
+}
+
+.bg-bvr-menu {
+  background-color: #b1e319 !important;
+}
+@media screen and (max-width: 480px) {
+  .sm-padding {
+    padding-top: 10px;
+  }
+}
