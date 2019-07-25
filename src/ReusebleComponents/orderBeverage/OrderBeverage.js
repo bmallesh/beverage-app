@@ -8,7 +8,7 @@ class OrderBeverage extends Component {
     super(props);
     this.state = {
       name: "",
-      beverageName: ""
+      beverageName: this.props.selectValue
     };
     console.log(this.props.BeverageMenu);
     this.handleChange = this.handleChange.bind(this);
@@ -96,7 +96,7 @@ class OrderBeverage extends Component {
               type="select"
               className="form-control pl-2 "
               name="beverageName"
-              value={this.props.selectValue}
+              value={this.state.beverageName}
               onChange={this.handleChange}
             >
               <option> -- Please Select --</option>
